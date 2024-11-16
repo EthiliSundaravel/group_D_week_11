@@ -99,13 +99,6 @@ func BenchmarkReverseString(b *testing.B) {
     }
 }
 
-// Benchmark test for SumOfSlice
-func BenchmarkSumOfSlice(b *testing.B) {
-    slice := make([]int, 1000) // A slice of 1000 integers
-    for i := 0; i < b.N; i++ {
-        SumOfSlice(slice)
-    }
-}
 
 // Benchmark test for Factorial
 func BenchmarkFactorial(b *testing.B) {
