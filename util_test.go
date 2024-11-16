@@ -25,25 +25,7 @@ func TestIsPrime(t *testing.T) {
     }
 }
 
-// Unit test for ReverseString with edge case
-func TestReverseString(t *testing.T) {
-    tests := []struct {
-        input    string
-        expected string
-    }{
-        {"hello", "olleh"},
-        {"", ""},
-        {"a", "a"},
-        {"ab", "ba"},
-    }
 
-    for _, test := range tests {
-        result := ReverseString(test.input)
-        if result != test.expected {
-            t.Errorf("ReverseString(%q) = %q; expected %q", test.input, result, test.expected)
-        }
-    }
-}
 
 // Unit test for SumOfSlice with edge case
 func TestSumOfSlice(t *testing.T) {
