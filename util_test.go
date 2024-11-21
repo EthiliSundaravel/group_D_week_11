@@ -71,10 +71,11 @@ func TestFactorial(t *testing.T) {
         input    int
         expected int
     }{
-        {5, 120},
+        {6, 720},
         {0, 1},
         {1, 1},
-        {-5, -1}, // Error case
+        {-6, -1},
+        {10,3628800}, // Error case
     }
 
     for _, test := range tests {
